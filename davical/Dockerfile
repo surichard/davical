@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y libpq-dev libc-client-dev libkrb5-dev l
     && docker-php-ext-install -j$(nproc) pdo pdo_pgsql pgsql imap gettext calendar \
     && rm -rf /var/lib/apt/lists/*
 
-ENV DAVICAL_VERSION=1.1.8 \
+ENV DAVICAL_VERSION=1.1.9.3 \
     AWL_VERSION=0.60 \
     DAVICAL_ADMIN_EMAIL='' \
     DAVICAL_ADMIN_DB_USER='davical_dba' \
